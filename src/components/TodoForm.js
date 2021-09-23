@@ -37,19 +37,19 @@ class TodoForm extends Component {
       <div className="card">
         <form onSubmit={this.handleSubmit} className="card-body">
 
-          <div className="form-group">
+          <div className="form-group mb-3">
             <input
             p-3
               type="text"
               name="title"
-              className="form-control"
+              className="form-control "
               value={this.state.title}
               onChange={this.handleInputChange}
               placeholder="Title"
               />
           </div>
 
-          <div className="form-group">
+          <div className="form-group mb-3">
             <input
               type="text"
               name="responsible"
@@ -60,7 +60,7 @@ class TodoForm extends Component {
               />
           </div>
 
-          <div className="form-group">
+          <div className="form-group mb-3">
             <input
               type="text"
               name="description"
@@ -71,7 +71,7 @@ class TodoForm extends Component {
               />
           </div>
 
-          <div className="form-group">
+          <div className="form-group mb-3">
             <select
                 name="priority"
                 className="form-control"
@@ -84,7 +84,7 @@ class TodoForm extends Component {
             </select>
           </div>
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary mb-3">
             Save
           </button>
 
@@ -96,3 +96,4 @@ class TodoForm extends Component {
 }
 
 export default TodoForm; //exporta el componente
+
